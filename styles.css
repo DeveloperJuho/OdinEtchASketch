@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, .inputField, .sqrContainer {
+    margin: 0px 0px 10px 10px;
+}
+
+.sqrContainer{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.squareRow{
+    display: flex;
+    flex-shrink: 0;
+}
+
+.squareDiv{
+    display: flex;
+    flex-shrink: 0;
+    height: 10px;
+    width: 10px;
+    border: solid 1px black;  
+}

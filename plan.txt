@@ -1,0 +1,10 @@
+- To create A x A grid I'm going to create as many rows as there are going to be divs in a row.
+- Rows will be inside a container that has downwards flex
+- Rows will have normal flex
+
+Javascript:
+- Row width will be added in javascript as it has to be the input times div width
+
+CSS:
+- Row width is always the same and the same as height
+- Flex.shrink is set to 0, nothing should become smaller even if stuff won't fit in to window
