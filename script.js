@@ -6,17 +6,32 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Div for squares
     const squareContainer = document.querySelector(".sqrContainer");
+    const resetButton = document.querySelector(".sqrButton");
+
+    resetButton.addEventListener("click", () =>{
+        const inputField = document.querySelector(".sqrInput");
+
+        if(Number(inputField.value) <= 64 && Number(inputField.value > 0)){
+            createGrid(squareContainer, inputField.value);
+        }     
+        else{
+            createGrid(squareContainer, 16);
+        }   
+    });
 
     // Initialize with a 16x16 container
     createGrid(squareContainer, 16);
-    // Test replaceChildren and add a new 20x20 container
-    createGrid(squareContainer, 20);
+
 });
 
 // Square constructor
 const squareConstructor = function(){
     const basicSquare = document.createElement("div");
     basicSquare.className = "squareDiv";
+
+    basicSquare.addEventListener("mouseenter", () => {
+        basicSquare.classList.add("painted");
+    });
 
     return basicSquare;
 }
@@ -40,6 +55,4 @@ const createGrid = function(sqrContainer, divNumber){
     for(let i = 0; i < divNumber; i++){
         sqrContainer.appendChild(rowConstructor(divNumber));
     }
-
-
 }

@@ -4,7 +4,20 @@
 
 Javascript:
 - Row width will be added in javascript as it has to be the input times div width
+- When hover has happened to a square, add a class of painted
 
 CSS:
 - Row width is always the same and the same as height
 - Flex.shrink is set to 0, nothing should become smaller even if stuff won't fit in to window
+- Hover and painted squares have a different background color
+
+TODO:
+
+- Hovering
+- Reset button functionality
+- Check the extra portion of the assignment
+
+Hovering:
+
+- When mouse hovers over a grid, turn it to painted
+- Hover and painted grids will have different background color
