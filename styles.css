@@ -3,8 +3,16 @@
     padding: 0px;
 }
 
-h1, .inputField, .sqrContainer {
+h1, .inputField, .sqrContainer, button {
     margin: 0px 0px 10px 10px;
+}
+
+button{
+    padding: 5px;
+}
+
+input, button{
+    margin-top: 10px;
 }
 
 .sqrContainer{
@@ -24,10 +32,6 @@ h1, .inputField, .sqrContainer {
     height: 15px;
     width: 15px;
     border: solid 1px black;  
-}
-
-.squareDiv:hover, .squareDiv.painted{
-    background-color: black;
 }
 
 
